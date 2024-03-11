@@ -1,4 +1,4 @@
-package entity
+package domain
 
 type Category struct {
 	Id   int
