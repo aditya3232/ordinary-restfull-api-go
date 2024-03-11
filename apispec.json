@@ -34,7 +34,7 @@
                       "data": {
                         "type": "array",
                         "items": {
-                          "$ref": "#/components/schemas/Category"
+                          "$ref": "#/components/schemas/ResponseCategory"
                         }
                       }
                     }
@@ -55,7 +55,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CreateOrUpdateCategory"
+                  "$ref": "#/components/schemas/RequestBodyCreateOrUpdateCategory"
                 }
               }
             }
@@ -75,7 +75,7 @@
                         "type": "string"
                       },
                       "data": {
-                        "$ref": "#/components/schemas/Category"
+                        "$ref": "#/components/schemas/ResponseCategory"
                       }
                     }
                   }
@@ -115,7 +115,7 @@
                         "type": "string"
                       },
                       "data": {
-                        "$ref": "#/components/schemas/Category"
+                        "$ref": "#/components/schemas/ResponseCategory"
                       }
                     }
                   }
@@ -142,7 +142,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/CreateOrUpdateCategory"
+                  "$ref": "#/components/schemas/RequestBodyCreateOrUpdateCategory"
                 }
               }
             }
@@ -162,7 +162,7 @@
                         "type": "string"
                       },
                       "data": {
-                        "$ref": "#/components/schemas/Category"
+                        "$ref": "#/components/schemas/ResponseCategory"
                       }
                     }
                   }
@@ -210,7 +210,7 @@
     },
     "components": {
       "schemas": {
-        "Category": {
+        "ResponseCategory": {
           "type": "object",
           "properties": {
             "id": {
@@ -221,7 +221,7 @@
             }
           }
         },
-        "CreateOrUpdateCategory": {
+        "RequestBodyCreateOrUpdateCategory": {
           "type": "object",
           "properties": {
             "name": {

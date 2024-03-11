@@ -8,6 +8,10 @@ import (
 	"ordinary-restfull-api-go/model/domain"
 )
 
+/*
+	- implementasi dari repository
+*/
+
 type CategoryRepositoryImpl struct {
 }
 
@@ -31,9 +35,9 @@ func (repository *CategoryRepositoryImpl) Update(ctx context.Context, tx *sql.Tx
 	return category
 }
 
-func (repository *CategoryRepositoryImpl) Delete(ctx context.Context, tx *sql.Tx, category domain.Category) {
+func (repository *CategoryRepositoryImpl) Delete(ctx context.Context, tx *sql.Tx, categoryId int) {
 	SQL := "delete from categories where id = ?"
-	_, err := tx.ExecContext(ctx, SQL, category.Id)
+	_, err := tx.ExecContext(ctx, SQL, categoryId)
 	helper.PanicIfError(err)
 
 }
