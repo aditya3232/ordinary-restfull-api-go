@@ -8,6 +8,8 @@ import (
 /*
 	- service nanti akan memanggil repository untuk akses database
 	- service adalah bisnis logic, yang menghubungkan repository, logic, request & response
+	- logic biasanya berisi, trasaction database, add request to data model table, panggil repository, dan beberapa logic seperti pengecekan data, dll.
+	- transaction ada di level service, karena di service bisa saja memanggil beberapa repository
 */
 
 type CategoryService interface {
